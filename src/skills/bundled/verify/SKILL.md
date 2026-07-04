@@ -1,0 +1,4 @@
+---
+name: verify
+---
+Verify skill.

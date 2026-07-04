@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "jsx": "react-jsx",
+    "strict": false,
+    "noImplicitAny": false,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "allowJs": true,
+    "checkJs": false,
+    "types": ["bun-types"],
+    "baseUrl": ".",
+    "paths": {
+      "bun:bundle": ["./shims/bun-bundle.ts"],
+      "@ant/claude-for-chrome-mcp": ["./shims/@ant/claude-for-chrome-mcp.ts"],
+      "@ant/computer-use-mcp": ["./shims/@ant/computer-use-mcp.ts"],
+      "@ant/computer-use-mcp/types": ["./shims/@ant/computer-use-mcp-types.ts"],
+      "@ant/computer-use-mcp/sentinelApps": ["./shims/@ant/computer-use-mcp-sentinelApps.ts"],
+      "@ant/computer-use-swift": ["./shims/@ant/computer-use-swift.ts"],
+      "@ant/computer-use-input": ["./shims/@ant/computer-use-input.ts"],
+      "@anthropic-ai/claude-agent-sdk": ["./shims/@anthropic-ai/claude-agent-sdk.ts"],
+      "@anthropic-ai/mcpb": ["./shims/@anthropic-ai/mcpb.ts"],
+      "src/*": ["./src/*"]
+    }
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx", "shims/**/*.ts"],
+  "exclude": ["node_modules", "dist"]
+}

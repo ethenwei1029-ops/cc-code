@@ -1,0 +1,16 @@
+# Dot directories (IDE, OS, tooling)
+.*/
+!.gitignore
+
+# OS junk
+.DS_Store
+
+# HTML files
+*.html
+
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+cc-code
